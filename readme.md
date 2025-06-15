@@ -1,0 +1,1 @@
+Commande pour lancer le php en local : php -S locaphp -S localhost:8000
