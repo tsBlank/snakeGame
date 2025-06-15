@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-wrapper">
+
+      
+        <div class="main-container">
+            <div class="game-container">
+                <h1>Jeu du Serpent</h1>
+                <div class="score-container">
+                    Score : <span id="score">0</span>
+                </div>
+                <canvas id="gameCanvas" width="400" height="400"></canvas>
+            </div>
+
+            <div class="highscore-container">
+                <h2>Meilleurs Scores</h2>
+                <ul id="highScoreList">
+                    <li>Chargement...</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="gameOverScreen" class="hidden">
+            <h2>Game Over</h2>
+            <p>Votre score final est de : <span id="finalScore">0</span></p>
+            <input type="text" id="playerName" placeholder="Entrez votre nom" maxlength="15">
+            <button id="submitScoreButton">Sauvegarder</button>
+            <button id="restartButton">Recommencer</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
